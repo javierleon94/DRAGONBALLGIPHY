@@ -1,0 +1,49 @@
+body {
+    background: url('../images/dragonballwallpaper.png');
+}
+
+img {
+    max-height: 150px;
+}
+
+form,
+.DbBtn {
+    background-color: #474747;
+    color: white;
+}
+
+form {
+    padding: 10px;
+}
+
+#newDbInput {
+    color: black;
+}
+
+#addDBCharacter {
+    background-color: white;
+    color: #474747;
+    border: none;
+}
+
+input {
+    margin: 10px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+#DbButtons {
+    margin: 10px;
+}
+
+.DbBtn {
+    padding: 6px;
+    margin: 3px;
+}
+
+#giphyLogo {
+    margin: 20px;
+}
