@@ -14,7 +14,7 @@ function createButtons(){
 		$('.display').empty();
 
 		var DbSearch = $(this).data('name');
-		var giphyURL = "http://api.giphy.com/v1/gifs/search?q=dragon+ball+" + DbSearch + "&limit=10&api_key=dc6zaTOxFJmzC";
+		var giphyURL = "https://api.giphy.com/v1/gifs/search?q=dragon+ball+" + DbSearch + "&limit=10&api_key=dc6zaTOxFJmzC";
 		$.ajax({url: giphyURL, method: 'GET'}).done(function(giphy){
 			currentGif = giphy.data;
 			$.each(currentGif, function(index,value){
