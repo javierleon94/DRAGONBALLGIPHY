@@ -20,8 +20,10 @@ function createButtons(){
 			$.each(currentGif, function(index,value){
 				animatedGif= value.images.original.url;
 				pausedGif = value.images.original_still.url;
+				var thisRating = value.rating;
+				var rating = $('<h5>').html('rated: ' + thisRating).addClass('ratingStyle');
 				var stillGif= $('<img>').attr('data-animated', animatedGif).attr('data-paused', pausedGif).attr('src', pausedGif).addClass('playOnHover');
-				var fullGifDisplay = $('<button>').append(stillGif);
+				var fullGifDisplay = $('<button>').append(rating, stillGif);
 				$('.display').append(fullGifDisplay);
 			});
 		});
@@ -38,8 +40,8 @@ $(document).on('mouseover','.playOnHover', function(){
 
 //sets a button from input
 $('#addDBCharacter').on('click', function(){
-	var newShow = $('#newDbInput').val().trim();
-	dragonballTitle.push(newShow);
+	var newCharacter = $('#newDbInput').val().trim();
+	dragonballTitle.push(newCharacter);
 	createButtons();
 	return false;
 });

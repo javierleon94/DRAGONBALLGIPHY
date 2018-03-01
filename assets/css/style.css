@@ -25,6 +25,10 @@ form {
     color: #474747;
     border: none;
 }
+.ratingStyle {
+    color: rgb(218, 18, 237);
+    background-color: rgb(255, 255, 255);
+}
 
 input {
     margin: 10px;
